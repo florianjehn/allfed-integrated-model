@@ -2,7 +2,7 @@
 
 
 ## CalculateFeedAndMeat
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L44)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L43)
 ```python 
 CalculateFeedAndMeat(
    country_code, available_feed, available_grass, scenario,
@@ -17,21 +17,21 @@ CalculateFeedAndMeat(
 
 
 ### .get_meat_produced
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L71)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L70)
 ```python
 .get_meat_produced()
 ```
 
 
 ### .get_total_dairy_cows
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L141)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L140)
 ```python
 .get_total_dairy_cows()
 ```
 
 
 ### .get_total_milk_bearing_animals
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L156)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L155)
 ```python
 .get_total_milk_bearing_animals()
 ```
@@ -49,7 +49,7 @@ Calculates the total number of milk-bearing animals in the population.
 
 
 ## CountryData
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L171)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L170)
 ```python 
 CountryData(
    country_name
@@ -89,7 +89,7 @@ Fields:
 
 
 ### .set_livestock_unit_factors
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L211)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L210)
 ```python
 .set_livestock_unit_factors(
    df_country_info, df_regional_conversion_factors
@@ -104,14 +104,14 @@ on ther region. And the other, df_country_info contains the mapping from the cou
 Country Name needs to be the index of the df_country_info dataframe
 
 ### .homekill_desperation_parameters
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L258)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L257)
 ```python
 .homekill_desperation_parameters()
 ```
 
 
 ### .calculate_homekill_hours
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L265)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L264)
 ```python
 .calculate_homekill_hours()
 ```
@@ -120,7 +120,7 @@ Country Name needs to be the index of the df_country_info dataframe
 Function to calculate the number of hours required to slaughter the homekill animals.
 
 ### .calculate_total_slaughter_hours
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L272)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L271)
 ```python
 .calculate_total_slaughter_hours(
    all_animals
@@ -137,7 +137,7 @@ Not required for the program to work (and not called)
 
 
 ## AnimalSpecies
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L299)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L298)
 ```python 
 AnimalSpecies(
    animal_type, animal_species
@@ -171,7 +171,7 @@ Object containing the nutrition ratio for the animal type
 
 
 ### .update_attributes
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L330)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L329)
 ```python
 .update_attributes(
    **kwargs
@@ -180,7 +180,7 @@ Object containing the nutrition ratio for the animal type
 
 
 ### .set_animal_attributes
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L334)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L333)
 ```python
 .set_animal_attributes(
    population, slaughter, animal_function, livestock_unit, digestion_type,
@@ -192,7 +192,7 @@ Object containing the nutrition ratio for the animal type
 
 
 ### .set_LSU_attributes
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L420)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L419)
 ```python
 .set_LSU_attributes(
    country_object
@@ -201,7 +201,7 @@ Object containing the nutrition ratio for the animal type
 
 
 ### .set_species_milk_attributes
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L426)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L425)
 ```python
 .set_species_milk_attributes(
    productive_milk_age_start, productive_milk_age_end,
@@ -211,7 +211,7 @@ Object containing the nutrition ratio for the animal type
 
 
 ### .retiring_milk_head_monthly
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L461)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L460)
 ```python
 .retiring_milk_head_monthly()
 ```
@@ -220,7 +220,7 @@ Object containing the nutrition ratio for the animal type
 Function to calculate the number of retiring milk animals per month
 
 ### .set_species_slaughter_attributes
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L467)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L466)
 ```python
 .set_species_slaughter_attributes(
    gestation, other_animal_death_rate_annual, animals_per_pregnancy,
@@ -253,21 +253,21 @@ Returns
 None
 
 ### .set_milk_birth
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L668)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L667)
 ```python
 .set_milk_birth()
 ```
 
 
 ### .set_initial_milk_transfer
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L681)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L680)
 ```python
 .set_initial_milk_transfer()
 ```
 
 
 ### .total_homekill
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L690)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L689)
 ```python
 .total_homekill()
 ```
@@ -285,7 +285,7 @@ total_homekill : int
 the total homekill per month
 
 ### .exported_births
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L714)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L713)
 ```python
 .exported_births()
 ```
@@ -303,14 +303,14 @@ exported_births : int
 the number of births exported from the animal population
 
 ### .one_LSU_monthly_billion_kcal
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L731)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L730)
 ```python
 .one_LSU_monthly_billion_kcal()
 ```
 
 
 ### .net_energy_required_per_month
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L748)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L747)
 ```python
 .net_energy_required_per_month()
 ```
@@ -319,7 +319,7 @@ the number of births exported from the animal population
 Function to calculate the total net energy required per month for the species
 
 ### .net_energy_required_per_species
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L757)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L756)
 ```python
 .net_energy_required_per_species()
 ```
@@ -328,7 +328,7 @@ Function to calculate the total net energy required per month for the species
 Function to calculate the total net energy required per month for the species
 
 ### .reset_NE_balance
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L764)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L763)
 ```python
 .reset_NE_balance()
 ```
@@ -338,7 +338,7 @@ This function resets the feed balance to the feed required per month for the spe
 Needs to be run before feeding the animals each month.
 
 ### .feed_the_species
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L774)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L773)
 ```python
 .feed_the_species(
    grass_input, feed_input, is_ruminant = False
@@ -347,7 +347,7 @@ Needs to be run before feeding the animals each month.
 
 
 ### .append_month_zero
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L818)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L817)
 ```python
 .append_month_zero()
 ```
@@ -367,7 +367,7 @@ calculate and append the baseline values.
 
 
 ## AnimalPopulation
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L962)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L961)
 ```python 
 AnimalPopulation()
 ```
@@ -379,7 +379,7 @@ AnimalPopulation()
 
 
 ### .calculate_additive_births
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L963)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L962)
 ```python
 .calculate_additive_births(
    animal, current_month
@@ -388,7 +388,7 @@ AnimalPopulation()
 
 
 ### .calculate_change_in_population
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L980)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L979)
 ```python
 .calculate_change_in_population(
    animal, country_object, new_additive_animals_month,
@@ -419,7 +419,7 @@ Those that are calculated after are:
     - the population of animals that are pregnant for next month
 
 ### .calculate_pregnant_animals_birthing
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1093)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1092)
 ```python
 .calculate_pregnant_animals_birthing(
    animal, new_pregnant_animals_total
@@ -445,7 +445,7 @@ Returns
     The number of pregnant animals birthing this month
 
 ### .calculate_pregnant_slaughter
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1119)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1118)
 ```python
 .calculate_pregnant_slaughter(
    animal, new_slaughter_rate
@@ -460,7 +460,7 @@ If so, proceed to calculate the number of pregnant animals slaughtered
 Otherwise, set the number of pregnant animals slaughtered to the number of animals slaughtered this month
 
 ### .calculate_animal_population
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1195)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1194)
 ```python
 .calculate_animal_population(
    animal, country_object, new_additive_animals_month, new_other_animal_death,
@@ -470,7 +470,7 @@ Otherwise, set the number of pregnant animals slaughtered to the number of anima
 
 
 ### .calculate_births
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1245)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1244)
 ```python
 .calculate_births(
    animal
@@ -492,7 +492,7 @@ Returns
     to meat births from milk animals, not total births (meat and milk))
 
 ### .calculate_breeding_changes
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1276)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1275)
 ```python
 .calculate_breeding_changes(
    animal
@@ -518,7 +518,7 @@ Returns
 None
 
 ### .calculate_other_deaths
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1306)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1305)
 ```python
 .calculate_other_deaths(
    animal
@@ -527,7 +527,7 @@ None
 
 
 ### .calculate_slaughter_rate
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1312)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1311)
 ```python
 .calculate_slaughter_rate(
    animal, country_object, new_births_animals_month, new_other_animal_death,
@@ -553,7 +553,7 @@ Returns
     The number of spare slaughter hours remaining after the new slaughter rate is calculated
 
 ### .calculate_other_death_homekill_head
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1379)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1378)
 ```python
 .calculate_other_death_homekill_head(
    animal, country_object
@@ -562,7 +562,7 @@ Returns
 
 
 ### .calculate_healthy_homekill_head
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1402)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1401)
 ```python
 .calculate_healthy_homekill_head(
    animal, country_object
@@ -571,7 +571,7 @@ Returns
 
 
 ### .calculate_starving_pop_post_slaughter_healthy_homekill
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1428)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1427)
 ```python
 .calculate_starving_pop_post_slaughter_healthy_homekill(
    animal
@@ -580,7 +580,7 @@ Returns
 
 
 ### .calculate_starving_homekill_head
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1443)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1442)
 ```python
 .calculate_starving_homekill_head(
    animal, country_object,
@@ -590,7 +590,7 @@ Returns
 
 
 ### .calculate_starving_pop_post_all_slaughter_homekill
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1481)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1480)
 ```python
 .calculate_starving_pop_post_all_slaughter_homekill(
    animal, population_starving_post_slaughter_and_healthy_homekill
@@ -599,7 +599,7 @@ Returns
 
 
 ### .other_death_pregnant_adjustment
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1492)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1491)
 ```python
 .other_death_pregnant_adjustment(
    animal
@@ -608,7 +608,7 @@ Returns
 
 
 ### .calculate_starving_other_death_head
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1532)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1531)
 ```python
 .calculate_starving_other_death_head(
    animal, population_starving_post_slaughter_and_all_homekill
@@ -639,7 +639,7 @@ float
     The number of animals that die from starvation in a month.
 
 ### .calculate_final_population
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1565)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1564)
 ```python
 .calculate_final_population(
    animal
@@ -661,7 +661,7 @@ float
     The final population of the animal.
 
 ### .feed_animals
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1595)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1594)
 ```python
 .feed_animals(
    animal_list, ruminants, available_feed, available_grass
@@ -679,7 +679,7 @@ This means starting with milk.
 List needs to be sorted in the oprder you want the animals to be prioritised for feed
 
 ### .calculate_starving_animals_after_feed
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1620)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1619)
 ```python
 .calculate_starving_animals_after_feed(
    animal_list
@@ -692,7 +692,7 @@ It iterates through the animal list and calculates the number of animals that ar
 result is appended to the animal object
 
 ### .set_current_populations
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1631)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1630)
 ```python
 .set_current_populations(
    animal_objects
@@ -706,7 +706,7 @@ This value is then updated during the month loop.
 Runs at the start opf the month before any changes to population are made.
 
 ### .appened_current_populations
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1653)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1652)
 ```python
 .appened_current_populations(
    animal_objects
@@ -727,7 +727,7 @@ Runs at the end of the month loop once currrent population has been updated
 
 
 ## AnimalDataReader
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1666)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1665)
 ```python 
 AnimalDataReader()
 ```
@@ -739,7 +739,7 @@ AnimalDataReader()
 
 
 ### .read_animal_population_data
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1667)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1666)
 ```python
 .read_animal_population_data(
    filename
@@ -755,7 +755,7 @@ df_animal_stock_info : pandas dataframe
 Dataframe containing animal population data
 
 ### .read_animal_nutrition_data
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1693)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1692)
 ```python
 .read_animal_nutrition_data(
    filename
@@ -772,7 +772,7 @@ df_animal_nutrition : pandas dataframe
 Dataframe containing animal nutrition data
 
 ### .read_animal_options
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1718)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1717)
 ```python
 .read_animal_options(
    filename
@@ -789,7 +789,7 @@ df_animal_nutrition : pandas dataframe
 Dataframe containing animal nutrition data
 
 ### .read_animal_regional_factors
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1739)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1738)
 ```python
 .read_animal_regional_factors(
    filename
@@ -806,7 +806,7 @@ df_animal_nutrition : pandas dataframe
 Dataframe containing animal nutrition data
 
 ### .read_country_data
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1760)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1759)
 ```python
 .read_country_data(
    filename
@@ -826,7 +826,7 @@ Dataframe containing animal nutrition data
 
 
 ## AnimalModelBuilder
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1782)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1781)
 ```python 
 AnimalModelBuilder()
 ```
@@ -838,7 +838,7 @@ AnimalModelBuilder()
 
 
 ### .create_animal_objects
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1783)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1782)
 ```python
 .create_animal_objects(
    df_animal_stock_info, df_animal_attributes
@@ -860,7 +860,7 @@ Returns
     List of animal objects
 
 ### .get_optimal_next_animal_to_feed
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1869)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L1868)
 ```python
 .get_optimal_next_animal_to_feed(
    animal_dict, kcals_per_head_meat_dict, df_animal_attributes
@@ -869,7 +869,7 @@ Returns
 
 
 ### .update_animal_objects_with_slaughter
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2071)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2070)
 ```python
 .update_animal_objects_with_slaughter(
    animal_list, df_animal_attributes, df_animal_options, scenario,
@@ -893,7 +893,7 @@ Returns
     List of animal objects
 
 ### .update_animal_objects_with_milk
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2176)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2175)
 ```python
 .update_animal_objects_with_milk(
    animal_list, df_animal_attributes
@@ -916,7 +916,7 @@ Returns
     List of animal objects
 
 ### .update_animal_objects_LSU_factor
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2220)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2219)
 ```python
 .update_animal_objects_LSU_factor(
    animal_list, country_object
@@ -938,7 +938,7 @@ Returns
     List of animal objects
 
 ### .remove_first_month
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2242)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2241)
 ```python
 .remove_first_month(
    animal
@@ -950,7 +950,7 @@ Returns
 
 
 ## Debugging
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2250)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2249)
 ```python 
 Debugging()
 ```
@@ -962,7 +962,7 @@ Debugging()
 
 
 ### .print_list_lengths
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2251)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2250)
 ```python
 .print_list_lengths(
    obj
@@ -971,7 +971,7 @@ Debugging()
 
 
 ### .save_single_animal_data_to_csv
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2259)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2258)
 ```python
 .save_single_animal_data_to_csv(
    animal, output_path = 'animal_single_data_to_csv.csv'
@@ -980,7 +980,7 @@ Debugging()
 
 
 ### .print_list_any
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2306)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2305)
 ```python
 .print_list_any(
    animal_list
@@ -989,7 +989,7 @@ Debugging()
 
 
 ### .available_feed_function
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2370)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2369)
 ```python
 .available_feed_function(
    billion_kcals, months_to_run = 120
@@ -1007,7 +1007,7 @@ Net energy (NE): the amount of energy in the feed minus the energy lost in the f
 production through digestive and metabolic processes, i.e. heat increment.
 
 ### .available_grass_function
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2402)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2401)
 ```python
 .available_grass_function(
    billion_kcals, months_to_run = 120
@@ -1029,7 +1029,7 @@ in the feces, urine, and in heat production through digestive and metabolic proc
 
 
 ### calculate_net_slaughter_hours_by_size
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2438)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2437)
 ```python
 .calculate_net_slaughter_hours_by_size(
    animals
@@ -1045,7 +1045,7 @@ animals of that size
 
 
 ### world_test
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2814)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/animal_populations.py/#L2813)
 ```python
 .world_test()
 ```

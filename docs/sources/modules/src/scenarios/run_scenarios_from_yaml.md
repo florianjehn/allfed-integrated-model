@@ -2,7 +2,7 @@
 
 
 ### run_scenarios_from_yaml
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/scenarios/run_scenarios_from_yaml.py/#L43)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/scenarios/run_scenarios_from_yaml.py/#L44)
 ```python
 .run_scenarios_from_yaml(
    config_data, show_country_figures, show_map_figures, web_interface
@@ -16,7 +16,7 @@ Run the scenario in a loop, for each scenario specified, and using all data defi
 
 
 ### load_config_data
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/scenarios/run_scenarios_from_yaml.py/#L90)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/scenarios/run_scenarios_from_yaml.py/#L91)
 ```python
 .load_config_data(
    yaml_filename
@@ -30,7 +30,7 @@ Load the configuration data for the scenarios from a YAML file in the "scenarios
 
 
 ### print_usage_message
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/scenarios/run_scenarios_from_yaml.py/#L103)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/scenarios/run_scenarios_from_yaml.py/#L104)
 ```python
 .print_usage_message(
    repo_root
@@ -42,7 +42,7 @@ Load the configuration data for the scenarios from a YAML file in the "scenarios
 
 
 ### get_input_args
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/scenarios/run_scenarios_from_yaml.py/#L117)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/scenarios/run_scenarios_from_yaml.py/#L118)
 ```python
 .get_input_args(
    args

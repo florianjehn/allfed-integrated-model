@@ -2,7 +2,7 @@
 
 
 ## StoredFood
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/stored_food.py/#L11)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/stored_food.py/#L12)
 ```python 
 StoredFood(
    constants_for_params, outdoor_crops
@@ -16,7 +16,7 @@ StoredFood(
 
 
 ### .calculate_stored_food_to_use
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/stored_food.py/#L49)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/stored_food.py/#L50)
 ```python
 .calculate_stored_food_to_use(
    starting_month

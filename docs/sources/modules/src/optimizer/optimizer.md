@@ -2,7 +2,7 @@
 
 
 ## Optimizer
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L12)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L13)
 ```python 
 Optimizer(
    consts_for_optimizer, time_consts
@@ -16,7 +16,7 @@ Optimizer(
 
 
 ### .optimize_to_humans
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L68)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L69)
 ```python
 .optimize_to_humans(
    consts_for_optimizer, time_consts
@@ -41,7 +41,7 @@ This function optimizes the model to maximize the amount of food produced for hu
 
 
 ### .optimize_feed_to_animals
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L113)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L114)
 ```python
 .optimize_feed_to_animals(
    consts_for_optimizer, time_consts, min_human_food_consumption
@@ -68,7 +68,7 @@ This function optimizes the model to maximize the amount of food produced for fe
 
 
 ### .assign_predetermined_human_consumption_of_foods
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L164)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L165)
 ```python
 .assign_predetermined_human_consumption_of_foods(
    model, month, variables, min_human_food_consumption, food_type
@@ -77,7 +77,7 @@ This function optimizes the model to maximize the amount of food produced for fe
 
 
 ### .add_variables_and_constraints_to_model
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L232)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L233)
 ```python
 .add_variables_and_constraints_to_model(
    model, variables, consts_for_optimizer, optimization_type
@@ -123,7 +123,7 @@ This function returns three outputs:
 - `maximize_constraints`: A list of the objective functions added to the model, used for validation purposes.
 
 ### .add_resource_specific_conditions_to_model
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L330)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L334)
 ```python
 .add_resource_specific_conditions_to_model(
    model, variables, month, optimization_type, func, food_name
@@ -132,7 +132,7 @@ This function returns three outputs:
 
 
 ### .run_optimizations_on_constraints
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L347)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L351)
 ```python
 .run_optimizations_on_constraints(
    model, variables, consts_for_optimizer, optimization_type
@@ -173,7 +173,7 @@ Here's a brief overview of the operations it performs:
 process.
 
 ### .constrain_next_optimization_to_have_same_total_resilient_foods_in_feed
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L480)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L484)
 ```python
 .constrain_next_optimization_to_have_same_total_resilient_foods_in_feed(
    model_max_to_humans, variables
@@ -195,7 +195,7 @@ Constrains the next optimization to have the same total resilient foods in feed 
 
 
 ### .add_conditions_to_model
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L544)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L548)
 ```python
 .add_conditions_to_model(
    model, month, conditions
@@ -228,7 +228,7 @@ Adds conditions to a given model for a given month.
 ```
 
 ### .load_variable_names_and_prefixes
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L571)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L575)
 ```python
 .load_variable_names_and_prefixes()
 ```
@@ -247,7 +247,7 @@ This function initializes a dictionary of variable names and prefixes, and retur
 
 
 ### .optimize_best_food_consumption_to_go_to_humans
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L659)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L663)
 ```python
 .optimize_best_food_consumption_to_go_to_humans(
    model, variables, ASSERT_SUCCESSFUL_OPTIMIZATION, consts_for_optimizer
@@ -273,7 +273,7 @@ demands for feed and biofuel are met.
 
 
 ### .reduce_fluctuations_with_a_final_optimization
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L731)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L735)
 ```python
 .reduce_fluctuations_with_a_final_optimization(
    model, variables, ASSERT_SUCCESSFUL_OPTIMIZATION, consts_for_optimizer,
@@ -299,7 +299,7 @@ Optimize the smoothing objective function to reduce fluctuations in the model.
 
 
 ### .constrain_next_optimization_to_have_same_minimum_starvation
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L961)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L965)
 ```python
 .constrain_next_optimization_to_have_same_minimum_starvation(
    model, variables
@@ -331,7 +331,7 @@ previous optimization value and ensuring that consumed_kcals meets this value ea
 ... )
 
 ### .constrain_next_optimization_to_have_same_feed_biofuel
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1031)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1035)
 ```python
 .constrain_next_optimization_to_have_same_feed_biofuel(
    model, variables
@@ -363,7 +363,7 @@ previous optimization value and ensuring that consumed_kcals meets this value ea
 ... )
 
 ### .create_lp_variables
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1075)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1079)
 ```python
 .create_lp_variables(
    prefix, month
@@ -385,7 +385,7 @@ Create a pulp variable with a given prefix and month.
 
 
 ### .add_constraints
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1090)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1094)
 ```python
 .add_constraints(
    model, month, condition, prefix
@@ -409,7 +409,7 @@ Adds a constraint to the given model based on the given condition, month, and pr
 
 
 ### .add_variable_from_prefixes
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1108)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1112)
 ```python
 .add_variable_from_prefixes(
    variables, prefixes
@@ -432,7 +432,7 @@ Adds variables to the LP problem for each prefix and month.
 
 
 ### .add_percentage_intake_constraints
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1130)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1134)
 ```python
 .add_percentage_intake_constraints(
    model, variables, month, optimization_type
@@ -458,7 +458,7 @@ Adds constraints to the optimization model based on the percentage intake of the
 
 
 ### .get_feed_sum
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1259)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1263)
 ```python
 .get_feed_sum(
    variables, month
@@ -467,7 +467,7 @@ Adds constraints to the optimization model based on the percentage intake of the
 
 
 ### .get_biofuel_sum
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1269)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1273)
 ```python
 .get_biofuel_sum(
    variables, month
@@ -476,7 +476,7 @@ Adds constraints to the optimization model based on the percentage intake of the
 
 
 ### .add_feed_biofuel_to_model
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1279)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1283)
 ```python
 .add_feed_biofuel_to_model(
    model, variables, month, optimization_type
@@ -521,7 +521,7 @@ Adds feed and biofuel variables to the model for a given month.
 ```
 
 ### .add_total_human_consumption_to_model
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1363)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1367)
 ```python
 .add_total_human_consumption_to_model(
    model, variables, month, optimization_type
@@ -547,7 +547,7 @@ to the optimization model.
 
 
 ### .add_maximize_min_month_objective_to_model
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1477)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1481)
 ```python
 .add_maximize_min_month_objective_to_model(
    model, variables, month, maximize_constraints
@@ -556,7 +556,7 @@ to the optimization model.
 
 
 ### .get_nonhuman_consumption_sum
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1513)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1517)
 ```python
 .get_nonhuman_consumption_sum(
    nmonths, variables
@@ -565,7 +565,7 @@ to the optimization model.
 
 
 ### .add_maximize_sum_total_feed_used_by_animals
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1521)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1525)
 ```python
 .add_maximize_sum_total_feed_used_by_animals(
    model, variables, nmonths
@@ -574,7 +574,7 @@ to the optimization model.
 
 
 ### .add_seaweed_to_model
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1543)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1547)
 ```python
 .add_seaweed_to_model(
    month, variables
@@ -596,7 +596,7 @@ Adds seaweed to the model by setting conditions for the seaweed wet on farm, use
 
 
 ### .add_stored_food_to_model_only_first_year
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1613)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1617)
 ```python
 .add_stored_food_to_model_only_first_year(
    month, variables
@@ -618,7 +618,7 @@ Adds stored food to the model for the first year only.
 
 
 ### .add_stored_food_to_model
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1689)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1693)
 ```python
 .add_stored_food_to_model(
    month, variables
@@ -627,7 +627,7 @@ Adds stored food to the model for the first year only.
 
 
 ### .add_meat_to_model
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1731)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1735)
 ```python
 .add_meat_to_model(
    month, variables
@@ -654,7 +654,7 @@ exceed the amount in that month and the months prior.
 
 
 ### .add_meat_to_model_no_storage
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1781)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1785)
 ```python
 .add_meat_to_model_no_storage(
    month, variables
@@ -679,7 +679,7 @@ It simply sets the meat eaten to the amount of meat slaughtered -- no storage at
 
 
 ### .add_outdoor_crops_to_model_no_storage
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1808)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1812)
 ```python
 .add_outdoor_crops_to_model_no_storage(
    month, variables
@@ -707,7 +707,7 @@ Adds a condition to the model that checks if the crops food storage is zero for 
 >>> add_outdoor_crops_to_model_no_storage(3, variables)
 
 ### .handle_first_month
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1844)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1848)
 ```python
 .handle_first_month(
    variables, month
@@ -732,7 +732,7 @@ condition as a key and True as a value.
 
 
 ### .handle_last_month
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1867)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1871)
 ```python
 .handle_last_month(
    variables, month, use_relocated_crops, initial_harvest_duration
@@ -741,7 +741,7 @@ condition as a key and True as a value.
 
 
 ### .handle_other_months
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1895)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1899)
 ```python
 .handle_other_months(
    variables, month, use_relocated_crops
@@ -780,7 +780,7 @@ the variables passed in and returns them.
 ```
 
 ### .add_crops_food_consumed_with_nutrient_name
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1931)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1935)
 ```python
 .add_crops_food_consumed_with_nutrient_name(
    variables, month, nutrient, lowercase_nutrient
@@ -789,7 +789,7 @@ the variables passed in and returns them.
 
 
 ### .create_linear_constraints_for_fat_and_protein_crops_food
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1947)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L1951)
 ```python
 .create_linear_constraints_for_fat_and_protein_crops_food(
    month, variables, fat_multiplier, protein_multiplier
@@ -813,7 +813,7 @@ This function creates linear constraints for fat and protein crops food.
 
 
 ### .get_outdoor_crops_month_constants
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L2007)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L2011)
 ```python
 .get_outdoor_crops_month_constants(
    use_relocated_crops, month
@@ -844,7 +844,7 @@ protein multiplier.
 (7, 0.4, 0.3)
 
 ### .add_outdoor_crops_to_model
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L2047)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L2051)
 ```python
 .add_outdoor_crops_to_model(
    month, variables
@@ -853,7 +853,7 @@ protein multiplier.
 
 
 ### .add_methane_scp_to_model
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L2083)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L2087)
 ```python
 .add_methane_scp_to_model(
    month, variables
@@ -892,7 +892,7 @@ maximum amount of methane SCP allowed for that month.
 ```
 
 ### .add_cellulosic_sugar_to_model
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L2125)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/optimizer.py/#L2129)
 ```python
 .add_cellulosic_sugar_to_model(
    month, variables

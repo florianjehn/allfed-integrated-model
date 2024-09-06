@@ -16,7 +16,7 @@ Greenhouses(
 
 
 ### .assign_productivity_reduction_from_climate_impact
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/greenhouses.py/#L50)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/greenhouses.py/#L47)
 ```python
 .assign_productivity_reduction_from_climate_impact(
    months_cycle, all_months_reductions, exponent, CROP_WASTE_COEFFICIENT
@@ -55,7 +55,7 @@ None
 ```
 
 ### .get_greenhouse_area
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/greenhouses.py/#L124)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/greenhouses.py/#L121)
 ```python
 .get_greenhouse_area(
    constants_for_params, outdoor_crops
@@ -85,7 +85,7 @@ multiplier is not specified, it uses the greenhouse fraction from Australia to c
 then assigns the productivity reduction from climate impact and returns the greenhouse area array.
 
 ### .get_greenhouse_yield_per_ha
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/greenhouses.py/#L198)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/greenhouses.py/#L195)
 ```python
 .get_greenhouse_yield_per_ha(
    constants_for_params, outdoor_crops

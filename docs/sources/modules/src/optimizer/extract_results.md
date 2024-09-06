@@ -2,7 +2,7 @@
 
 
 ## Extractor
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L13)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L14)
 ```python 
 Extractor(
    constants
@@ -16,7 +16,7 @@ Extractor(
 
 
 ### .extract_results
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L26)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L27)
 ```python
 .extract_results(
    model, variables, time_consts
@@ -39,7 +39,7 @@ Extracts the results from the model and stores them in the Extractor object.
 
 
 ### .to_monthly_list
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L138)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L139)
 ```python
 .to_monthly_list(
    variables, conversion
@@ -61,7 +61,7 @@ Converts a list of variables to a monthly list of values.
 
 
 ### .to_monthly_list_outdoor_crops_kcals
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L174)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L175)
 ```python
 .to_monthly_list_outdoor_crops_kcals(
    crops_food_eaten, crops_kcals_produced, conversion
@@ -90,7 +90,7 @@ attributed to the eating of stored up crops.
     unit of measurement) that is stored for later consumption each month.
 
 ### .get_greenhouse_results
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L233)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L234)
 ```python
 .get_greenhouse_results(
    greenhouse_crops
@@ -99,7 +99,7 @@ attributed to the eating of stored up crops.
 
 
 ### .create_food_object_from_fat_protein_variables
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L241)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L242)
 ```python
 .create_food_object_from_fat_protein_variables(
    production_kcals, production_fat, production_protein
@@ -122,7 +122,7 @@ This function creates a Food object from the given production_kcals, production_
 
 
 ### .extract_generic_results
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L285)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L286)
 ```python
 .extract_generic_results(
    production_kcals, ratio_kcals, ratio_fat, ratio_protein, constants
@@ -147,7 +147,7 @@ Extracts generic results from production_kcals, ratio_kcals, ratio_fat, ratio_pr
 
 
 ### .extract_outdoor_crops_results
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L328)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L329)
 ```python
 .extract_outdoor_crops_results(
    crops_food_to_humans, crops_food_to_humans_fat, crops_food_to_humans_protein,
@@ -171,7 +171,7 @@ Validates if the total outdoor growing production has not changed.
 None
 
 ### .calculate_outdoor_crops_kcals
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L451)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L452)
 ```python
 .calculate_outdoor_crops_kcals(
    crops_food_to_humans, to_humans_outdoor_crop_production
@@ -180,7 +180,7 @@ None
 
 
 ### .validate_sources_add_up
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L460)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L461)
 ```python
 .validate_sources_add_up(
    billions_fed_immediate_outdoor_crops_kcals,
@@ -224,7 +224,7 @@ None
 
 
 ### .set_new_stored_outdoor_crops_values
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L498)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L499)
 ```python
 .set_new_stored_outdoor_crops_values(
    billions_fed_new_stored_outdoor_crops_kcals
@@ -246,7 +246,7 @@ crops each month.
 None
 
 ### .set_immediate_outdoor_crops_values
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L521)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L522)
 ```python
 .set_immediate_outdoor_crops_values(
    billions_fed_immediate_outdoor_crops_kcals
@@ -267,7 +267,7 @@ Sets the values of immediate outdoor crops in the Extractor object.
 None
 
 ### .validate_outdoor_growing_production
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L543)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L544)
 ```python
 .validate_outdoor_growing_production()
 ```
@@ -287,7 +287,7 @@ sum of immediate outdoor crops and new stored outdoor crops is equal to zero.
 None
 
 ### .extract_meat_milk_results
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L562)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L563)
 ```python
 .extract_meat_milk_results(
    meat_eaten, milk_kcals, milk_fat, milk_protein
@@ -327,7 +327,7 @@ None
 ```
 
 ### .extract_to_humans_feed_and_biofuel
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L644)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L645)
 ```python
 .extract_to_humans_feed_and_biofuel(
    to_humans, feed, biofuel, kcals_ratio, fat_ratio, protein_ratio, constants
@@ -336,7 +336,7 @@ None
 
 
 ### .get_objective_optimization_results
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L690)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/extract_results.py/#L691)
 ```python
 .get_objective_optimization_results(
    model

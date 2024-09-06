@@ -9,44 +9,12 @@ copyright: ALLFED
 
 #This specifies the autogeneration portion
 pages:
-  - page: "modules/src/scenarios/run_scenario.md"
-    source: "src/scenarios/run_scenario.py"
+  - page: "modules/src/utilities/constants.md"
+    source: "src/utilities/constants.py"
     classes:
-      - ScenarioRunner
-    functions:
-      - are_dicts_approx_same
-
-  - page: "modules/src/scenarios/scenarios.md"
-    source: "src/scenarios/scenarios.py"
-    classes:
-      - Scenarios
-
-  - page: "modules/src/scenarios/run_model_no_trade.md"
-    source: "src/scenarios/run_model_no_trade.py"
-    classes:
-      - ScenarioRunnerNoTrade
-
-  - page: "modules/src/scenarios/run_scenarios_from_yaml.md"
-    source: "src/scenarios/run_scenarios_from_yaml.py"
-    functions:
-      - run_scenarios_from_yaml
-      - load_config_data
-      - print_usage_message
-      - get_input_args
-
-  - page: "modules/src/import_scripts_no_food_trade/create_nuclear_winter_csv.md"
-    source: "src/import_scripts_no_food_trade/create_nuclear_winter_csv.py"
-    functions:
-      - get_crop_ratios_this_country
-      - get_overall_reduction
-      - calculate_reductions
-      - clean_up_nw_csv
-      - get_all_crops_correct_countries
-
-  - page: "modules/src/import_scripts_no_food_trade/create_crop_macros_csv.md"
-    source: "src/import_scripts_no_food_trade/create_crop_macros_csv.py"
-    classes:
-      - CropMacros
+      - ScenarioConstants
+      - FixedConstants
+      - MonthlyConstants
 
   - page: "modules/src/utilities/make_powerpoint.md"
     source: "src/utilities/make_powerpoint.py"
@@ -58,36 +26,10 @@ pages:
     classes:
       - ImportUtilities
 
-  - page: "modules/src/utilities/constants.md"
-    source: "src/utilities/constants.py"
-    classes:
-      - ScenarioConstants
-      - FixedConstants
-      - MonthlyConstants
-
   - page: "modules/src/utilities/plotter.md"
     source: "src/utilities/plotter.py"
     classes:
       - Plotter
-
-  - page: "modules/src/food_system/seaweed.md"
-    source: "src/food_system/seaweed.py"
-    classes:
-      - Seaweed
-
-  - page: "modules/src/food_system/animal_populations.md"
-    source: "src/food_system/animal_populations.py"
-    classes:
-      - CalculateFeedAndMeat
-      - CountryData
-      - AnimalSpecies
-      - AnimalPopulation
-      - AnimalDataReader
-      - AnimalModelBuilder
-      - Debugging
-    functions:
-      - calculate_net_slaughter_hours_by_size
-      - world_test
 
   - page: "modules/src/food_system/seafood.md"
     source: "src/food_system/seafood.py"
@@ -104,30 +46,49 @@ pages:
     classes:
       - CellulosicSugar
 
-  - page: "modules/src/food_system/stored_food.md"
-    source: "src/food_system/stored_food.py"
+  - page: "modules/src/food_system/animal_populations.md"
+    source: "src/food_system/animal_populations.py"
     classes:
-      - StoredFood
+      - CalculateFeedAndMeat
+      - CountryData
+      - AnimalSpecies
+      - AnimalPopulation
+      - AnimalDataReader
+      - AnimalModelBuilder
+      - Debugging
+    functions:
+      - calculate_net_slaughter_hours_by_size
+      - world_test
 
   - page: "modules/src/food_system/methane_scp.md"
     source: "src/food_system/methane_scp.py"
     classes:
       - MethaneSCP
 
-  - page: "modules/src/food_system/food.md"
-    source: "src/food_system/food.py"
-    classes:
-      - Food
-
   - page: "modules/src/food_system/feed_and_biofuels.md"
     source: "src/food_system/feed_and_biofuels.py"
     classes:
       - FeedAndBiofuels
 
+  - page: "modules/src/food_system/food.md"
+    source: "src/food_system/food.py"
+    classes:
+      - Food
+
   - page: "modules/src/food_system/unit_conversions.md"
     source: "src/food_system/unit_conversions.py"
     classes:
       - UnitConversions
+
+  - page: "modules/src/food_system/seaweed.md"
+    source: "src/food_system/seaweed.py"
+    classes:
+      - Seaweed
+
+  - page: "modules/src/food_system/stored_food.md"
+    source: "src/food_system/stored_food.py"
+    classes:
+      - StoredFood
 
   - page: "modules/src/food_system/outdoor_crops.md"
     source: "src/food_system/outdoor_crops.py"
@@ -139,28 +100,67 @@ pages:
     classes:
       - MeatAndDairy
 
+  - page: "modules/src/scenarios/run_scenarios_from_yaml.md"
+    source: "src/scenarios/run_scenarios_from_yaml.py"
+    functions:
+      - run_scenarios_from_yaml
+      - load_config_data
+      - print_usage_message
+      - get_input_args
+
+  - page: "modules/src/scenarios/run_model_no_trade.md"
+    source: "src/scenarios/run_model_no_trade.py"
+    classes:
+      - ScenarioRunnerNoTrade
+
+  - page: "modules/src/scenarios/scenarios.md"
+    source: "src/scenarios/scenarios.py"
+    classes:
+      - Scenarios
+
+  - page: "modules/src/scenarios/run_scenario.md"
+    source: "src/scenarios/run_scenario.py"
+    classes:
+      - ScenarioRunner
+    functions:
+      - are_dicts_approx_same
+
   - page: "modules/src/optimizer/validate_results.md"
     source: "src/optimizer/validate_results.py"
     classes:
       - Validator
-
-  - page: "modules/src/optimizer/interpret_results.md"
-    source: "src/optimizer/interpret_results.py"
-    classes:
-      - Interpreter
-
-  - page: "modules/src/optimizer/parameters.md"
-    source: "src/optimizer/parameters.py"
-    classes:
-      - Parameters
 
   - page: "modules/src/optimizer/optimizer.md"
     source: "src/optimizer/optimizer.py"
     classes:
       - Optimizer
 
+  - page: "modules/src/optimizer/parameters.md"
+    source: "src/optimizer/parameters.py"
+    classes:
+      - Parameters
+
   - page: "modules/src/optimizer/extract_results.md"
     source: "src/optimizer/extract_results.py"
     classes:
       - Extractor
+
+  - page: "modules/src/optimizer/interpret_results.md"
+    source: "src/optimizer/interpret_results.py"
+    classes:
+      - Interpreter
+
+  - page: "modules/src/import_scripts_no_food_trade/create_crop_macros_csv.md"
+    source: "src/import_scripts_no_food_trade/create_crop_macros_csv.py"
+    classes:
+      - CropMacros
+
+  - page: "modules/src/import_scripts_no_food_trade/create_nuclear_winter_csv.md"
+    source: "src/import_scripts_no_food_trade/create_nuclear_winter_csv.py"
+    functions:
+      - get_crop_ratios_this_country
+      - get_overall_reduction
+      - calculate_reductions
+      - clean_up_nw_csv
+      - get_all_crops_correct_countries
 

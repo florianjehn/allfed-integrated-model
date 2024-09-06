@@ -2,7 +2,7 @@
 
 
 ## Seafood
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/seafood.py/#L12)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/seafood.py/#L13)
 ```python 
 Seafood(
    constants_for_params
@@ -16,7 +16,7 @@ Seafood(
 
 
 ### .set_seafood_production
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/seafood.py/#L59)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/seafood.py/#L60)
 ```python
 .set_seafood_production(
    time_consts_for_params

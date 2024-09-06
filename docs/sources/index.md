@@ -21,15 +21,22 @@ python3 plot_manuscript_figures.py rerun all
 ```
 You can always just run 
 ```bash
-python3 plot_manuscript_figures.py rerun all
+python3 plot_manuscript_figures.py
 ```
-To recalculate fewer plots or show specific results from the paper.
+To see how to run fewer plots, load plots you already ran, or show specific results from the paper.
 
 Individual scenarios, or a series of scenarios of interest, can be specified in the scenarios/ folder.
 ```bash
-./run_scenarios_from_yaml.sh False True False one_food_at_a_time_USA.yaml
+./run_scenarios_from_yaml.sh True False True argentina.yaml
 ```
-This shows a stackplot of people fed in baseline (no nuclear winter but loss of trade), nuclear winter without resilient food (no food trade), and nuclear winter with no food trade.
+This shows a series of stackplots of argentina with no food trade, including animal slaughter, feed, and food available to humans after waste each month. The scenarios shown are:
+
+1. Baseline net production (continued feed/biofuel, normal climate)
+2. Baseline gross production (shut off feed/biofuel, normal climate)
+3. Nuclear winter net production (continued feed/biofuel, 150 Tg nuclear winter)
+4. Nuclear winter with reduced feed/waste  (continued feed/biofuel, nuclear winter, reduced waste)
+5. Nuclear winter with resilient foods (continued feed/biofuel, nuclear winter, reduced waste, resilient foods)
+6. Nuclear winter with resilient foods & more area (continued feed/biofuel, nuclear winter, reduced waste, resilient foods, cropland expansion)
 
 The first argument is whether to show plotted simulation results for the different rounds of optimization.
 The second argument is whether to show a map of percent people fed for all countries, and shows at the end for each type of scenario specified in the yaml file.
@@ -65,6 +72,8 @@ https://zenodo.org/record/7039924
 
 # more details
 ![Flow Chart](https://raw.githubusercontent.com/allfed/allfed-integrated-model/main/outfile.png)
+![Flow Chart](https://raw.githubusercontent.com/allfed/allfed-integrated-model/main/docs/repository_flowchart/ModularArchitecture.drawio(2).svg)
+
 
 
 #### Dependency management with Anaconda
@@ -104,12 +113,19 @@ For both versions: Code from this project will only run smoothly when opened in 
 environment and when the working directory is set to the path location of the repository on
 your machine.
 
+# Regenerate documentation
+```bash
+python3 automate_mkdocs.py
+gendocs --config mkgendocs.yml
+mkdocs serve
+```
+Then navigate to `http://127.0.0.1:8000/` in your web browser.
 
 # Detailed Explanation of Files and Folders in this Repository
 
 Below we explain all of the folders and files used for getting data, processing data, running simulations, then displaying and saving results of models.
 
-Files purely for documentation or creating the python environment are not included below.
+Files purely for  mentation or creating the python environment are not included below.
 
 Directory Structure
 ------------
@@ -268,59 +284,9 @@ Optimization in optimizer uses the PuLP linear optimizer to optimally satisfy th
 
 ## src/scenarios/
 
-Running a script in scenarios is done after completing import of the scripts, if no_food_trade scenarios are being run. Files in **scenarios/** are either utility files used to specify the scenarios or provide an intermediary interface to allow other scripts to run the model in a particular way, scripts used to process and run specific scenarios for the nuclear winter with or without global food trade between trading blocs, or scripts which plot the results of these scenario runs. The scenarios are all either involving full food trade or no food trade between trading blocs, as determined by the trading bloc data in **no_food_trade/computer_readable_combined.csv** and globally-aggregated data stored in **scenarios.py**.
-
+Running a script in scenarios is done after completing import of the scripts, if no_food_trade scenarios are being run. The scenarios are all either involving full food trade or no food trade between trading blocs, as determined by the trading bloc data in **no_food_trade/computer_readable_combined.csv** and globally-aggregated data stored in **scenarios.py**.
 
 Utility files used to specify the scenarios are: **scenarios.py**
-Utility files used to provide an intermediary interface to allow other scripts to run the model in a particular way are: **run_model_no_trade.py**, **run_scenario.py**
-
-Scripts used to process and run specific scenarios for the nuclear winter with global food trade between trading blocs: **run_model_with_resilient_foods.py**, **run_model_baseline.py**, **run_model_no_resilient_foods.py**, **create_figure_3abcd.py**
-
-Scripts which plot the results of these scenario runs: **plot_primary_food.py**
-
-Scripts used to process and run specific scenarios for the nuclear winter without global food trade between trading blocs: **create_figure_1ab.py**, **create_figure_2abcde.py**, **run_model_no_trade_baseline.py**, **run_model_no_trade_no_resilient_foods.py**, **run_model_no_trade_with_resilient_foods.py**, **reproduce_xia_et_al_USA.py**, **run_USA_with_improved_numbers.py**
-            
-The files which simply plot results are: **plot_primary_food.py**
-
-The scenarios are run under a single set of assumptions or multiple sets of assumptions. Uses input data stored in **data/no_food_trade/computer_readable_combined.csv**. The python files in this directory are all the ways that the model can be run.
-
-Overall, the scripts in the scenarios folder interrelate as follows:
-
-( **run_model_with_resilient_foods.py**,
-               **run_model_baseline.py**,
-               **run_model_no_resilient_foods.py**,
-               **create_figure_3abcd.py** )
-                   ==calls=for=each=scenario==>
-                        **run_scenario.py**
-
-
-( **create_figure_1ab.py**,
-               **create_figure_2abcde.py**,
-               **reproduce_xia_et_al_USA.py**,
-               **run_USA_with_improved_numbers.py**,
-               **run_model_no_trade_with_resilient_foods.py**,
-               **run_model_no_trade_no_resilient_foods.py**,
-               **run_model_no_trade_baseline.py** )
-                  ==call=with=scenarios=defined==>
-                      **run_model_no_trade.py**
- 
-**run_model_no_trade.py** ==calls=for=each=scenario==> **run_scenario.py**
-
-In the case of no food trade:
-**scenarios.py** <==loads== **data/no_food_trade/computer_readable_combined.csv**
-
-**run_scenario.py** <==loads== **scenarios.py**
-
-
-Next, the **run_scenario.py** file calls the optimizer as follows in order to produce results for each scenario:
-
-**run_scenario.py** 
-                ==calls=in=this=order=>
-                    **src/optimizer/parameters.py**
-                    **src/optimizer/optimizer.py**
-                    **src/optimizer/extract_results.py**
-                    **src/optimizer/interpret_results.py**
-                    **src/optimizer/validate_results.py**
 
 Finally the results are returned from run_scenario back up the call chain in reverse order.
 

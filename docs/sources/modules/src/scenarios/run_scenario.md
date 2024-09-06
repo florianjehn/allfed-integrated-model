@@ -125,7 +125,7 @@ These are the scenarios I seem to be unable to determine why optimization is fai
 I belive I have hit diminishing returns trying to figure them out, so I just patch them instead.
 
 ### .set_depending_on_option
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/scenarios/run_scenario.py/#L782)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/scenarios/run_scenario.py/#L750)
 ```python
 .set_depending_on_option(
    scenario_option, country_data = None
@@ -134,7 +134,7 @@ I belive I have hit diminishing returns trying to figure them out, so I just pat
 
 
 ### .save_outdoor_crop_production_to_csv
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/scenarios/run_scenario.py/#L1330)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/scenarios/run_scenario.py/#L1306)
 ```python
 .save_outdoor_crop_production_to_csv(
    time_consts_round1, title, country_data
@@ -145,7 +145,7 @@ I belive I have hit diminishing returns trying to figure them out, so I just pat
 Saves the outdoor crop production to a csv file
 
 ### .save_feed_and_biofuels_to_csv
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/scenarios/run_scenario.py/#L1352)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/scenarios/run_scenario.py/#L1328)
 ```python
 .save_feed_and_biofuels_to_csv(
    feed_demand, biofuels_demand, title, country_data

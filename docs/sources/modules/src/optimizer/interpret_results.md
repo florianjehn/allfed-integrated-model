@@ -2,7 +2,7 @@
 
 
 ## Interpreter
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L27)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L29)
 ```python 
 
 ```
@@ -17,7 +17,7 @@ ways of interpreting the results, as a diet, or as a total food supply.
 
 
 ### .set_feed_and_biofuels
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L38)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L40)
 ```python
 .set_feed_and_biofuels(
    feed_and_biofuels
@@ -26,7 +26,7 @@ ways of interpreting the results, as a diet, or as a total food supply.
 
 
 ### .set_meat_dictionary
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L42)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L44)
 ```python
 .set_meat_dictionary(
    meat_dictionary
@@ -35,7 +35,7 @@ ways of interpreting the results, as a diet, or as a total food supply.
 
 
 ### .interpret_results
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L54)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L56)
 ```python
 .interpret_results(
    extracted_results, title = 'Untitled'
@@ -65,7 +65,7 @@ ANYTHING assigned to "self" here is part of a useful result that will either
 be printed or plotted as a result
 
 ### .assign_percent_fed_from_extractor
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L162)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L165)
 ```python
 .assign_percent_fed_from_extractor(
    extracted_results
@@ -85,7 +85,7 @@ of the extraction process.
 None
 
 ### .assign_kcals_equivalent_from_extractor
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L212)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L215)
 ```python
 .assign_kcals_equivalent_from_extractor(
    extracted_results
@@ -105,7 +105,7 @@ Assigns the kcals equivalent of various food sources to their respective attribu
 None
 
 ### .set_to_humans_properties_kcals_equivalent
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L264)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L267)
 ```python
 .set_to_humans_properties_kcals_equivalent(
    extracted_results
@@ -125,7 +125,7 @@ Converts the stored food and outdoor crops to humans properties to their equival
 None
 
 ### .assign_time_months_middle
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L294)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L297)
 ```python
 .assign_time_months_middle(
    NMONTHS
@@ -156,7 +156,7 @@ None
 ```
 
 ### .assign_interpreted_properties
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L316)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L319)
 ```python
 .assign_interpreted_properties(
    extracted_results
@@ -186,7 +186,7 @@ None
 ```
 
 ### .get_mean_min_nutrient
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L354)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L357)
 ```python
 .get_mean_min_nutrient()
 ```
@@ -200,7 +200,7 @@ a constraint on number of people fed
 returns: the mean people fed in all months
 
 ### .get_sum_by_adding_to_humans
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L374)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L377)
 ```python
 .get_sum_by_adding_to_humans()
 ```
@@ -238,7 +238,7 @@ Sums the resulting nutrients from the extracted_results and returns the total.
 ```
 
 ### .print_kcals_per_person_per_day
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L417)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L420)
 ```python
 .print_kcals_per_person_per_day(
    interpreted_results
@@ -259,7 +259,7 @@ the interpreted results of a scenario.
 None
 
 ### .get_percent_people_fed
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L435)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L438)
 ```python
 .get_percent_people_fed(
    humans_fed_sum
@@ -283,7 +283,7 @@ nutrients available for the population.
 meet their needs.
 
 ### .correct_and_validate_rounding_errors
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L466)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L469)
 ```python
 .correct_and_validate_rounding_errors()
 ```
@@ -307,7 +307,7 @@ None
 new_stored_outdoor_crops, and seaweed.
 
 ### .get_month_after_which_is_all_zero
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L526)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L529)
 ```python
 .get_month_after_which_is_all_zero(
    variables, nmonths
@@ -316,7 +316,7 @@ new_stored_outdoor_crops, and seaweed.
 
 
 ### .calculate_feed_and_biofuels
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L563)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L566)
 ```python
 .calculate_feed_and_biofuels(
    seaweed_used_for_biofuel, methane_scp_used_for_biofuel,
@@ -333,7 +333,7 @@ outdoor crops, methane, and cellulosic sugar that are used for feed and
 biofuels, and the remaining feed and biofuel needed from stored food.
 
 ### .sum_many_results_together
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L663)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/optimizer/interpret_results.py/#L666)
 ```python
 .sum_many_results_together(
    many_results, cap_at_100_percent

@@ -45,7 +45,7 @@ This function subtracts off the estimated harvest for the first year for countri
 
 
 ### .assign_increase_from_increased_cultivated_area
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/outdoor_crops.py/#L340)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/outdoor_crops.py/#L339)
 ```python
 .assign_increase_from_increased_cultivated_area(
    constants_for_params
@@ -54,7 +54,7 @@ This function subtracts off the estimated harvest for the first year for countri
 
 
 ### .assign_reduction_from_climate_impact
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/outdoor_crops.py/#L366)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/outdoor_crops.py/#L365)
 ```python
 .assign_reduction_from_climate_impact(
    constants_for_params
@@ -63,7 +63,7 @@ This function subtracts off the estimated harvest for the first year for countri
 
 
 ### .set_crop_production_minus_greenhouse_area
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/outdoor_crops.py/#L394)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/outdoor_crops.py/#L392)
 ```python
 .set_crop_production_minus_greenhouse_area(
    constants_for_params, greenhouse_fraction_area

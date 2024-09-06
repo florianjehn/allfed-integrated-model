@@ -93,119 +93,6 @@ protein)
 **Methods:**
 
 
-### .get_Food_class
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/food.py/#L110)
-```python
-.get_Food_class(
-   cls
-)
-```
-
----
-This function returns the class object of the current class.
-
-**Args**
-
-* **cls** (class) : The class object of the current class.
-
-
-**Returns**
-
-* **class**  : The class object of the current class.
-
-
-### .get_conversions
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/food.py/#L121)
-```python
-.get_conversions(
-   cls
-)
-```
-
----
-Returns the class conversions object.
-This method is only used by the parent UnitConversions class.
-
-
-**Args**
-
-* **cls** (class) : The class object.
-
-
-**Returns**
-
-* **conversions** (object) : The class conversions object.
-
-
-**Raises**
-
-* **AssertionError**  : If the conversions property has not been assigned before
-attempting to convert between food units.
-
-### .get_nutrient_names
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/food.py/#L147)
-```python
-.get_nutrient_names(
-   cls
-)
-```
-
----
-Returns a list of the macronutrients of the food.
-
-
-**Args**
-
-* **cls** (class) : The class object representing the Food class.
-
-
-**Returns**
-
-* **list**  : A list of strings representing the macronutrients of the food.
-
-
-**Example**
-
->>> Food.get_nutrient_names()
-['kcals', 'fat', 'protein']
-
-### .ratio_one
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/food.py/#L165)
-```python
-.ratio_one(
-   cls
-)
-```
-
----
-Creates a Food object with kcals, fat, and protein all set to 1, and units set to "ratio".
-
-**Returns**
-
-* **Food**  : a Food object with kcals, fat, and protein all set to 1, and units set to "ratio".
-
-
-### .ratio_zero
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/food.py/#L183)
-```python
-.ratio_zero(
-   cls
-)
-```
-
----
-Creates a Food object with all nutrient values set to 0 and units set to "ratio".
-
-**Args**
-
-* **cls**  : the class object
-
-
-**Returns**
-
-* **Food**  : a Food object with kcals, fat, and protein set to 0 and units set to "ratio".
-
-
 ### .reset_food
 [source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/food.py/#L296)
 ```python
@@ -408,31 +295,6 @@ Check if the food's nutritional values are NaN and raise an assertion error if t
 **Returns**
 
 None
-
-### .get_remaining_food_needed_and_amount_used
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/food.py/#L699)
-```python
-.get_remaining_food_needed_and_amount_used(
-   demand, resource, max_fraction_of__demand_satisfied_by_resource
-)
-```
-
----
-Calculate the remaining food resource needed to satisfy a given food demand based on a certain resource.
-
-
-**Args**
-
-* **demand** (Food) : The food demand.
-* **resource** (Food) : Available food resources.
-* **max_fraction_of__demand_satisfied_by_resource** (float) : Maximum fraction of the demand which
-    is allowed to be satisfied by the food resource.
-
-
-**Returns**
-
-* **Food**  : Remaining food needed to meet the demand.
-
 
 ### .shift
 [source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/food.py/#L725)
@@ -1029,35 +891,6 @@ each month
 >>> other_protein_ratio = 0.3
 >>> amount_consumed_list = food.get_amount_used_other_food(other_fat_ratio, other_protein_ratio)
 ```
-
-### .min_elementwise
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/food.py/#L2187)
-```python
-.min_elementwise(
-   food1, food2
-)
-```
-
----
-Returns a new Food object where each nutrient value
-is the minimum between the corresponding values of food1 and food2.
-
-
-**Args**
-
-* **food1** (Food) : First Food object.
-* **food2** (Food) : Second Food object.
-
-
-**Returns**
-
-* **Food**  : New Food object with minimum nutrient values for each month.
-
-
-**Raises**
-
-* **ValueError**  : If either of the Food objects is not in monthly list format.
-
 
 ### .get_consumed_amount
 [source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/food.py/#L2237)

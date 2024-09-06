@@ -16,7 +16,7 @@ Seaweed(
 
 
 ### .get_growth_rates
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/seaweed.py/#L111)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/seaweed.py/#L112)
 ```python
 .get_growth_rates(
    constants_for_params
@@ -25,7 +25,7 @@ Seaweed(
 
 
 ### .get_built_area
-[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/seaweed.py/#L131)
+[source](https://github.com/allfed/allfed-integrated-model/blob/master/src/food_system/seaweed.py/#L132)
 ```python
 .get_built_area(
    constants_for_params
